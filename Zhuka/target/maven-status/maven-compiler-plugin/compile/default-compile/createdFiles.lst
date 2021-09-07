@@ -1,0 +1,8 @@
+com\zhuka\genericLib\BaseTest.class
+com\zhuka\pages\HomePage.class
+com\zhuka\pages\LoginPage.class
+com\zhuka\genericLib\WebDriverCommonLib.class
+com\zhuka\pages\CreatePurchasePage.class
+com\zhuka\genericLib\IAutoConsts.class
+com\zhuka\genericLib\FileLib.class
+com\zhuka\pages\CustomViewPage.class

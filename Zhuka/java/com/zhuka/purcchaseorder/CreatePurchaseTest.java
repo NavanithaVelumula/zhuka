@@ -25,16 +25,16 @@ public  void purchase() throws Throwable
 	Thread.sleep(2000);
 	HomePage hp =new HomePage();
 	hp.clickPurchaseTab();
-	wlib.verify(wlib.getPageTitle(),flib.Readpropertydata(PROP_PATH, "customViweTitle"),"Custom View Page" );
+	//wlib.verify(wlib.getPageTitle(),flib.Readpropertydata(PROP_PATH, "customviewTitle"),"Custom View Page" );
 	CustomViewPage cv = new CustomViewPage();
 	cv.clickNewPurchaseTab();
-	wlib.verify(wlib.getPageTitle(),flib.Readpropertydata(PROP_PATH, "createPurchaseTitle"),"Create Purchase Page");
+	//wlib.verify(wlib.getPageTitle(),flib.Readpropertydata(PROP_PATH, "createPurchaseTitle"),"Create Purchase Page");
 	CreatePurchasePage cp = new CreatePurchasePage();
 	cp.createPurchaseWithMandatoryDetails(flib.Readexceldata(EXCEL_PATH, "Sheet1", 0, 1)
 	, flib.Readexceldata(EXCEL_PATH, "Sheet1", 1, 1),
 			flib.Readexceldata(EXCEL_PATH,"Sheet1", 2, 1),flib.Readexceldata(EXCEL_PATH, "Sheet1", 3, 1));
 	
-			wlib.verify(wlib.getPageTitle(),flib.Readpropertydata(PROP_PATH, "purchaseorderdetailsTitle"), "Purchase detail page");
+			//wlib.verify(wlib.getPageTitle(),flib.Readpropertydata(PROP_PATH, "purchaseorderdetailsTitle"), "Purchase detail page");
 	
 	
 	

@@ -37,9 +37,9 @@ public class BaseTest implements  IAutoConsts
 		String expectedLoginTitle= flib.Readpropertydata(PROP_PATH, "loginTitle");
 		wlib.verify(wlib.getPageTitle(), expectedLoginTitle, "Login Page");
 		}
-	@AfterClass
-	public void closeBrowser()
-	{
-		driver.quit();
-	}
+//	@AfterClass
+//	public void closeBrowser()
+//	{
+//		driver.quit();
+//	}
 }
